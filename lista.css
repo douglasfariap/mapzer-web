@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  .sidebar {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+
+  .sidebar h5 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #333;
+    white-space: nowrap;
+  }
+  
+  .main-content {
+    margin-left: 300px; /* Margem para compensar a sidebar */
+    padding: 0 10px; /* Margem interna de 10px em cada lado */
+  }
+  
+  /* Filtros superiores com tamanho fixo */
+  .filter-item-small {
+    width: auto; /* Tamanho automático baseado no conteúdo */
+  }
+  
+  .filter-item-small input,
+  .filter-item-small button {
+    border-radius: 8px; /* Arredonda as bordas dos inputs e botão */
+    padding: 8px;
+  }
+  
+  /* Dropdowns inferiores ocupando o máximo de espaço */
+  .filter-item {
+    width: calc(16.6% - 10px); /* Cada item ocupa 1/6 da largura total */
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+  }
+  
+  .form-control,
+  .form-select {
+    border-radius: 8px; /* Arredonda as bordas dos inputs e dropdowns */
+    padding: 8px;
+  }
+  
+  
+  h2 {
+    font-weight: 600;
+  }
+  
+  .d-flex.flex-wrap {
+    gap: 10px; /* Espaçamento horizontal entre os itens */
+  }
+  
+
+  .main-content h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .nav-link {
+    color: rgb(21,22,30);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center; /* Alinha ícones e texto verticalmente */
+    gap: 10px; /* Espaço entre ícone e texto */
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
+  .nav-link.active {
+    font-weight: 500;
+    color: rgb(21,22,30);
+    background-color: rgba(148,137,245,0.3); /* Cor de fundo para o item ativo */
+    border-radius: 12px;
+  }
+
+  .nav-link .material-icons {
+    font-size: 22px;
+    width: 24px;
+    color: rgb(21,22,30);
+    text-align: center;
+  }
+  
+  .user-info {
+    text-align: left;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .user-info .m-0{
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .user-info .text-muted {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(96,106,133);
+  }
+  
+  .user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .divider {
+    height: 1px;
+    background-color: #ddd;
+    width: 100%;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .btn-sair {
+    background-color: rgba(75,57,239, 0.8);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    max-width: 134px;
+    height: 30px;
+    padding: 2px;
+  }
+
+  .btn-sair:hover {
+    background-color: rgba(75,57,239, 0.75);
+  }
